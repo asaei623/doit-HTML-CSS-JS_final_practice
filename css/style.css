@@ -1,0 +1,57 @@
+/* 전체 스타일 */
+* {
+  margin: 0; /* 마진값 초기화  */
+  padding: 0; /* 패딩값 초기화 */
+  box-sizing: border-box; /* 박스 영역은 테두리까지 지정 */
+}
+#container{
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  width: 1200px; /* 너비 1200px 지정 */
+}
+header{
+  width: 1200px; /* 100%라고 해도 됨 */
+  height: 100px;
+  background-color: blue;
+}
+#logo{
+  float: left; /* 왼쪽으로 플로팅 */
+  width: 250px;
+  height: 100px;
+  background-color: indigo;
+}
+nav{
+  float: right; /* 오른쪽으로 플로팅 */
+  width: 900px;
+  height: 100px;
+  background-color: green;
+}
+#slideShow{
+  clear: both; /* 플로팅 해제 */
+  width: 1200px;
+  height: 300px;
+  background-color: orange;
+  overflow: hidden; /* 영역 넘치면 감춤 */
+}
+#contents{
+  width: 1200px; 
+  height: 300px;
+}
+#tabMenu{
+  float: left; /* 왼쪽으로 플로팅 */
+  width: 600px;
+  height: 300px;
+  background-color: violet;
+}
+#quickLinks{
+  float: right; /* 오른쪽으로 플로팅 */
+  width: 600px;
+  height: 300px;
+  background-color: skyblue;
+}
+footer{
+  /* 왜 footer는 clear: both가 필요없을까? */
+  width: 1200px;
+  height: 100px;
+  background-color: gray;
+}
+
