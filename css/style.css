@@ -129,6 +129,7 @@ button:focus{ /* 버튼을 클릭했을 경우 */
 #contents{
   width: 1200px; 
   height: 300px;
+  margin-top: 20px;
 }
 #tabMenu{
   float: left; /* 왼쪽으로 플로팅 */
@@ -184,7 +185,40 @@ button:focus{ /* 버튼을 클릭했을 경우 */
   float: right; /* 오른쪽으로 플로팅 */
   width: 600px;
   height: 300px;
-  background-color: skyblue;
+  margin-top: 15px;
+}
+#quickLinks ul{
+  padding: 0;
+  overflow: hidden; /* 넘치는 항목은 감춤 */
+}
+#quickLinks ul li{
+  float: left; /* 가로 배치*/
+  width: 33%; /* 3개 놓을 거기 때문에 33% */
+  text-align: center;
+  margin: 10px 0;
+}
+#quickLinks ul li a span{ /*이미지 관련 세팅 */
+  display: block;
+  margin: 0 auto; /* 가운데 배치 */
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; /* 테두리 둥글게 지정 */
+  border: 1px solid #ddd;
+  line-height: 150px; /*수직으로 중간에 오게 만듦*/
+}
+#quick-icon1{
+  background-image: url('../images/icon-1.jpg');
+}
+#quick-icon2{
+  background-image: url('../images/icon-2.jpg');
+}
+#quick-icon3{
+  background-image: url('../images/icon-3.jpg');
+}
+#quickLinks ul li a p{ /* 링크 텍스트 관련 세팅 */
+  margin-top: 15px;
+  font-weight: 600;
+  color: #666;
 }
 footer{
   /* 왜 footer는 clear: both가 필요없을까? */
