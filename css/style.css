@@ -224,6 +224,42 @@ footer{
   /* 왜 footer는 clear: both가 필요없을까? */
   width: 1200px;
   height: 100px;
-  background-color: gray;
+  border-top: 2px solid #222; /* 위쪽에 가로선 넣게 */
 }
-
+#bottomMenu{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+#bottomMenu ul{
+  margin-top: 15px;
+}
+#bottomMenu ul li{
+  float: left; /* 가로로 배치 */
+  padding: 5px 20px;
+  border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child{
+  border-right: none; /* 마지막 항목에는 오른쪽 세로선 없음 */
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited{ /* 클릭해도 색상 변경 없음*/
+  font-size: 15px;
+  color: #666;
+}
+#sns{
+  position: absolute;
+  right: 0; /* 오른쪽 끝에 배치 */
+}
+#sns ul li{
+  border: none; /* 세로선 다시 없앰 */
+  padding: 5px;
+}
+#company{
+  clear: left; /*플로팅 해제. clear:both 해도 상관없음. 플로팅 해제하면 자동으로 밑으로 내려감 */
+  margin-top: 250px; /* clear:left 때문인지 적용이 안되고 있다. 어떻게 해결해야하는지 모르겠다*/
+  margin-left: 20px;
+}
+p{
+  font-size: 14px;
+  color: #aaa;
+}
