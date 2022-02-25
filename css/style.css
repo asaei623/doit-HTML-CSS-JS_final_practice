@@ -1,8 +1,12 @@
-/* 전체 스타일 */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* { /* 전체 스타일 */
   margin: 0; /* 마진값 초기화  */
   padding: 0; /* 패딩값 초기화 */
   box-sizing: border-box; /* 박스 영역은 테두리까지 지정 */
+}
+a{
+  text-decoration: none; /*밑줄 없앰*/
 }
 #container{
   margin: 0 auto; /* 화면 중앙에 배치 */
@@ -11,13 +15,20 @@
 header{
   width: 1200px; /* 100%라고 해도 됨 */
   height: 100px;
-  background-color: blue;
 }
 #logo{
   float: left; /* 왼쪽으로 플로팅 */
   width: 250px;
   height: 100px;
-  background-color: indigo;
+  line-height: 100px; /* height값과 같게 만들어서 세로로 중간에 오도록 맞춤. text-align:center랑 무슨 차이일까?*/
+  padding-left: 20px; /* 왼쪽에 패딩 */ 
+}
+#logo h1{
+  font-family: 'Merienda', cursive; /* 구글 웹 폰트 가져옴 */
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0 -1px 0 #222;
 }
 nav{
   float: right; /* 오른쪽으로 플로팅 */
